@@ -1,0 +1,45 @@
+{
+  "name": "@ogs-gmbh/vitepress-theme",
+  "version": "0.0.0",
+  "description": "A Vitepress theme inspired by OGSiD® 11 for OGS GmbH documentation.",
+  "keywords": [
+    "vitepress",
+    "vitepress-theme",
+    "theme",
+    "ogsid",
+    "ogsid-11",
+    "navigation",
+    "docs",
+    "documentation",
+    "plugin",
+    "vite",
+    "static-site",
+    "markdown"
+  ],
+  "homepage": "https://github.com/OGS-GmbH/vitepress-plugin-sidebar",
+  "bugs": "https://github.com/OGS-GmbH/vitepress-plugin-sidebar/issues",
+  "license": "MIT",
+  "author": "OGS GmbH",
+  "contributors": [
+    {
+      "name": "Simon Kovtyk",
+      "email": "simon@kovtyk.com",
+      "url": "https://simonkov.dev"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OGS-GmbH/vitepress-plugin-sidebar"
+  },
+  "type": "module",
+  "scripts": {
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@ogs-gmbh/ngx-m3-themes": "^1"
+  },
+  "sideEffects": false,
+  "publishConfig": {
+    "directory": "dist/main"
+  }
+}
