@@ -8,7 +8,7 @@
 
 <a href="./LICENSE" target="_blank"><img src="https://img.shields.io/github/license/OGS-GmbH/vitepress-theme?color=0f434e&logo=hackthebox&logoColor=000000&labelColor=ffffff" /></a>
 <a href="https://github.com/OGS-GmbH/vitepress-theme/actions/workflows/main-deploy.yml" target="_blank"><img src="https://img.shields.io/github/actions/workflow/status/OGS-GmbH/vitepress-theme/main-deploy.yml?color=0f434e&logo=rocket&logoColor=000000&labelColor=ffffff" /></a>
-<a href="https://www.npmjs.com/package/@ogs-gmbh/vitepress-theme" target="_blank"><img src="https://img.shields.io/npm/v/%40ogs-gmbh%2Ftheme?color=0f434e&logo=npm&logoColor=000000&labelColor=ffffff" /></a>
+<a href="https://www.npmjs.com/package/@ogs-gmbh/vitepress-theme" target="_blank"><img src="https://img.shields.io/npm/v/%40ogs-gmbh%2Fvitepress-theme?color=0f434e&logo=npm&logoColor=000000&labelColor=ffffff" /></a>
 
 - **OGSiD 11®**\
   Official theme for OGSiD 11®
@@ -29,7 +29,7 @@
 
 Using npm:
 ```sh
-$ npm install -D @ogs-gmbh/vitepress-plugin-sidebar
+$ npm install -D @ogs-gmbh/vitepress-theme
 ```
 
 <details>
@@ -38,17 +38,17 @@ $ npm install -D @ogs-gmbh/vitepress-plugin-sidebar
   
   Using yarn:
   ```sh
-  $ pnpm add -D @ogs-gmbh/vitepress-plugin-sidebar
+  $ pnpm add -D @ogs-gmbh/vitepress-theme
   ```
   
   Using pnpm:
   ```sh
-  $ pnpm add -D @ogs-gmbh/vitepress-plugin-sidebar
+  $ pnpm add -D @ogs-gmbh/vitepress-theme
   ```
   
   Using bun:
   ```sh
-  $ bun add -D @ogs-gmbh/vitepress-plugin-sidebar
+  $ bun add -D @ogs-gmbh/vitepress-theme
   ```
 
 </details>
@@ -106,3 +106,4 @@ This project is a trademark of OGS Gesellschaft für Datenverarbeitung und Syste
 Gesellschaft für Datenverarbeitung und Systemberatung mbH
 
 [Imprint](https://www.ogs.de/en/imprint/) | [Contact](https://www.ogs.de/en/contact/) | [Careers](https://www.ogs.de/en/about-ogs/#Careers)
+
