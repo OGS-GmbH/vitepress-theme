@@ -1,0 +1,15 @@
+@use "./brand" as brand;
+@use "./buttons" as buttons;
+@use "./divider" as divider;
+@use "./header" as header;
+@use "./logo" as logo;
+@use "./sidebar" as sidebar;
+
+@mixin include() {
+  @include brand.all();
+  @include buttons.all();
+  @include divider.all();
+  @include header.all();
+  @include logo.all();
+  @include sidebar.all();
+}

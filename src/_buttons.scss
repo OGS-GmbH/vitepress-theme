@@ -1,0 +1,20 @@
+@use "sass:map";
+@use "@ogs-gmbh/ngx-m3-themes" as ngx-m3-themes;
+
+@mixin vars() {
+  :root {
+    --vp-button-brand-bg: #{map-get(ngx-m3-themes.$petrol-palette, 50)} !important;
+    --vp-button-brand-hover-bg: #{map-get(ngx-m3-themes.$petrol-palette, 30)} !important;
+  }
+}
+
+@mixin base() {
+  .VPButton.medium {
+    border-radius: 8px !important;
+  }
+}
+
+@mixin all() {
+  @include vars();
+  @include base();
+}

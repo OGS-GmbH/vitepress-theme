@@ -1,0 +1,9 @@
+@mixin vars() {
+  :root {
+    --vp-c-gutter: var(--vp-c-divider) !important;
+  }
+}
+
+@mixin all() {
+  @include vars();
+}
