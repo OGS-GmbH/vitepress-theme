@@ -1,0 +1,19 @@
+@mixin base() {
+  /* HACK(simonkov): Keep consistenty in size */
+  .VPSocialLink:nth-child(5) svg,
+  .VPSocialLink:nth-child(6) svg {
+    width: 24px !important;
+    height: 24px !important;
+  }
+}
+
+@mixin colors() {
+  .VPSocialLink:nth-child(5) svg {
+    fill: none !important;
+  }
+}
+
+@mixin all() {
+  @include base();
+  @include colors();
+}

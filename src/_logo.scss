@@ -1,0 +1,10 @@
+@mixin base() {
+  .logo {
+    width: 80px !important;
+    height: auto !important;
+  }
+}
+
+@mixin all() {
+  @include base();
+}

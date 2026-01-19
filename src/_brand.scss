@@ -1,0 +1,14 @@
+@use "sass:map";
+@use "@ogs-gmbh/ngx-m3-themes" as ngx-m3-themes;
+
+@mixin vars() {
+  :root {
+    --vp-c-brand-1: #{map.get(ngx-m3-themes.$petrol-palette, 80)} !important;
+    --vp-c-brand-2: #{map.get(ngx-m3-themes.$petrol-palette, 95)} !important;
+  }
+}
+
+@mixin all() {
+  @include vars();
+}
+

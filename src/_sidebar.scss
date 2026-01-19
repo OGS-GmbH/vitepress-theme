@@ -1,0 +1,9 @@
+@mixin vars() {
+  :root {
+    --vp-sidebar-width: 380px !important;
+  }
+}
+
+@mixin all() {
+  @include vars();
+}
