@@ -1,7 +1,7 @@
 {
   "name": "@ogs-gmbh/vitepress-theme",
   "version": "0.0.0",
-  "description": "A Vitepress theme inspired by OGSiD® 11 for OGS GmbH documentation.",
+  "description": "A minimalist OGSiD 11® VitePress theme designed to be used in VitePress documentations.",
   "keywords": [
     "vitepress",
     "vitepress-theme",
