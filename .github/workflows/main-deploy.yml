@@ -22,3 +22,4 @@ jobs:
       release_please_config_file: ".release-please/main-config.json"
       release_please_manifest_file: ".release-please/main-manifest.json"
       release_please_target_branch: "main"
+      skip_docs: true
