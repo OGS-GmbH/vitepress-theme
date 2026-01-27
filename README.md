@@ -6,9 +6,9 @@
 
 ![Preview](./docs/preview.avif)
 
-<a href="./LICENSE" target="_blank"><img src="https://img.shields.io/github/license/OGS-GmbH/vitepress-theme?color=0f434e&logo=hackthebox&logoColor=000000&labelColor=ffffff" /></a>
-<a href="https://github.com/OGS-GmbH/vitepress-theme/actions/workflows/main-deploy.yml" target="_blank"><img src="https://img.shields.io/github/actions/workflow/status/OGS-GmbH/vitepress-theme/main-deploy.yml?color=0f434e&logo=rocket&logoColor=000000&labelColor=ffffff" /></a>
-<a href="https://www.npmjs.com/package/@ogs-gmbh/vitepress-theme" target="_blank"><img src="https://img.shields.io/npm/v/%40ogs-gmbh%2Fvitepress-theme?color=0f434e&logo=npm&logoColor=000000&labelColor=ffffff" /></a>
+<a href="./LICENSE" target="_blank"><img alt="license badge" src="https://img.shields.io/github/license/OGS-GmbH/vitepress-theme?color=0f434e&logo=hackthebox&logoColor=000000&labelColor=ffffff" /></a>
+<a href="https://github.com/OGS-GmbH/vitepress-theme/actions/workflows/main-deploy.yml" target="_blank"><img alt="deploy badge" src="https://img.shields.io/github/actions/workflow/status/OGS-GmbH/vitepress-theme/main-deploy.yml?color=0f434e&logo=rocket&logoColor=000000&labelColor=ffffff" /></a>
+<a href="https://www.npmjs.com/package/@ogs-gmbh/vitepress-theme" target="_blank"><img alt="npm badge" src="https://img.shields.io/npm/v/%40ogs-gmbh%2Fvitepress-theme?color=0f434e&logo=npm&logoColor=000000&labelColor=ffffff" /></a>
 
 - **OGSiD 11®**\
   Official theme for OGSiD 11®
