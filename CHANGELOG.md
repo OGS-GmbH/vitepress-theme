@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/OGS-GmbH/vitepress-theme/compare/v1.0.1...v1.1.0) (2026-01-27)
+
+
+### Features
+
+* **deps:** change pallet dependency ([07d9d7f](https://github.com/OGS-GmbH/vitepress-theme/commit/07d9d7f244f6f66b5d3fdc15e82cdea40b6e8bc1))
+
 ## [1.0.1](https://github.com/OGS-GmbH/vitepress-theme/compare/v1.0.0...v1.0.1) (2026-01-19)
 
 
