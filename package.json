@@ -35,10 +35,7 @@
       "sass": "./src/_public-api.scss"
     }
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/OGS-GmbH/vitepress-theme"
-  },
+  "repository": "github:OGS-GmbH/vitepress-theme",
   "type": "module",
   "scripts": {
     "ci:pr:commitlint:main:commitlint": "commitlint",
@@ -46,7 +43,7 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@ogs-gmbh/ngx-m3-themes": "^1"
+    "@ogs-gmbh/ogsid-11-theme": "^1"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.5.0",
