@@ -1,3 +1,6 @@
+@use "sass:map";
+@use "@ogs-gmbh/ogsid-11-theme" as ogsid-11-theme;
+
 @mixin base() {
   /* HACK(simonkov): Keep consistenty in size */
   .VPSocialLink:nth-child(5) svg,
@@ -8,12 +11,306 @@
 }
 
 @mixin colors() {
+  /* Light token */
   .VPSocialLink:nth-child(5) svg {
     fill: none !important;
+  }
+
+  .VPNavBar,
+  .VPNavBar .content-body {
+    background-color: #{map.get(ogsid-11-theme.$cyan-palette, 900)} !important;
+  }
+
+  .VPNavBar .title,
+  .VPNavBar .VPNavBarMenuLink,
+  .VPNavBar .VPNavBarMenuGroup .button,
+  .VPNavBar .VPNavBarMenuGroup .text {
+    color: #{map.get(ogsid-11-theme.$gray-palette, 50)} !important;
+  }
+
+  .VPNavBar svg,
+  .VPNavBar .VPSocialLink,
+  .VPNavBar .VPSocialLink span,
+  .VPNavBar .VPSocialLink svg {
+    color: #{map.get(ogsid-11-theme.$gray-palette, 400)} !important;
+  }
+
+  .DocSearch-Button {
+    background-color: #{map.get(ogsid-11-theme.$cyan-palette, 900)} !important;
+    border: 1px solid #{map.get(ogsid-11-theme.$gray-palette, 100)} !important;
+    color: #{map.get(ogsid-11-theme.$gray-palette, 50)} !important;
+  }
+
+  .DocSearch-Button-Placeholder {
+    color: #{map.get(ogsid-11-theme.$gray-palette, 50)} !important;
+  }
+
+  .DocSearch-Search-Icon {
+    color: #{map.get(ogsid-11-theme.$gray-palette, 400)} !important;
+  }
+
+  .DocSearch-Button-Keys {
+    background-color: map.get(ogsid-11-theme.$blue-gray-palette, 900) !important;
+    border: 1px solid #{map.get(ogsid-11-theme.$gray-palette, 50)} !important;
+  }
+
+  .DocSearch-Button-Key {
+    background-color: transparent !important;
+    color: #{map.get(ogsid-11-theme.$gray-palette, 50)} !important;
+  }
+
+  .VPNavBarTitle .VPImage.light.logo {
+    display: none !important;
+  }
+
+  .VPNavBarTitle .VPImage.dark.logo {
+    display: inline-block !important;
+  }
+
+  .VPNavBarTitle .title {
+    border-bottom: none;
+  }
+
+  .DocSearch-Button .DocSearch-Button-Key:first-child:after {
+    color: #{map.get(ogsid-11-theme.$gray-palette, 50)} !important;
+  }
+
+  .VPNavBar {
+    --ogs-nav-separator-color: #{map.get(ogsid-11-theme.$gray-palette, 50)};
+  }
+
+  /* Dark */
+  .dark {
+    .VPNavBarTitle .title {
+      border-bottom: 1px solid #{map.get(ogsid-11-theme.$gray-palette, 700)} !important; //424242
+    }
+
+    .VPNavBar {
+      --ogs-nav-separator-color: #{map.get(ogsid-11-theme.$gray-palette, 700)}; //424242
+    }
+
+    .VPNavBar,
+    .VPNavBar .content-body {
+      background-color: #{map.get(ogsid-11-theme.$gray-palette, 800)} !important;//424242 !important; //Header bg
+    }
+
+    .VPNavBar .title,
+    .VPNavBar .VPNavBarMenuLink,
+    .VPNavBar .VPNavBarMenuGroup .button,
+    .VPNavBar .VPNavBarMenuGroup .text {
+      color: #{map.get(ogsid-11-theme.$gray-palette, 50)} !important;
+    }
+
+    .VPNavBar svg,
+    .VPNavBar .VPSocialLink,
+    .VPNavBar .VPSocialLink span,
+    .VPNavBar .VPSocialLink svg {
+      color: #{map.get(ogsid-11-theme.$gray-palette, 500)} !important;
+    }
+
+    .DocSearch-Button {
+      background-color: #{map.get(ogsid-11-theme.$gray-palette, 800)} !important;
+      border: 1px solid #{map.get(ogsid-11-theme.$gray-palette, 700)} !important;
+      color: #{map.get(ogsid-11-theme.$gray-palette, 400)} !important;
+    }
+
+    .DocSearch-Button-Placeholder {
+      color: #{map.get(ogsid-11-theme.$gray-palette, 400)} !important;
+    }
+
+    .DocSearch-Search-Icon {
+      color: #{map.get(ogsid-11-theme.$gray-palette, 500)} !important;
+    }
+
+    .DocSearch-Button-Keys {
+      background-color: #{map.get(ogsid-11-theme.$gray-palette, 900)} !important;
+      border: 1px solid #{map.get(ogsid-11-theme.$gray-palette, 700)} !important;
+    }
+
+    .DocSearch-Button-Key {
+      background-color: transparent !important;
+      color: #{map.get(ogsid-11-theme.$gray-palette, 400)} !important;
+    }
+  }
+}
+
+@mixin spacing() {
+  .VPNavBar .content-body {
+    padding-left: var(--ogs-doc-space-md) !important;
+    padding-right: var(--ogs-doc-space-md) !important;
+  }
+
+  .VPNavBarSearch,
+  .VPNavBarSearch.search {
+    margin: 0 var(--ogs-doc-space-md) 0 0 !important;
+    padding: 0 !important;
+  }
+
+  #local-search,
+  .DocSearch-Button {
+    margin: 0 !important;
+  }
+
+  .DocSearch-Button-Keys {
+    height: 24px !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    padding: 0 6px !important;
+    gap: 1px !important;
+
+    border-radius: 4px !important;
+    box-shadow: none !important;
+  }
+
+  .DocSearch-Button-Key {
+    width: auto !important;
+    min-width: 0 !important;
+    height: 16px !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+
+    border: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+
+    line-height: 16px !important;
+    vertical-align: middle !important;
+  }
+
+  .DocSearch-Button-Key:first-child::after {
+    line-height: 16px !important;
+    color: inherit !important;
+  }
+
+  .VPNavBarMenu,
+  .VPNavBarMenu.menu {
+    gap: var(--ogs-doc-space-md) !important;
+  }
+
+  .VPNavBarMenuLink,
+  .VPNavBarMenuGroup .button {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin: 0 !important;
+  }
+
+  .VPNavBarMenuGroup {
+    margin: 0 !important;
+  }
+
+  .VPNavBarMenuGroup .text {
+    gap: var(--ogs-doc-space-2xs) !important;
+  }
+
+  .VPNavBarAppearance,
+  .VPNavBarAppearance.appearance {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  .VPNavBarMenu.menu + .VPNavBarAppearance::before,
+  .VPNavBarMenu.menu + .VPNavBarAppearance.appearance::before,
+  .menu + .VPNavBarAppearance::before,
+  .menu + .appearance::before {
+    content: "" !important;
+    display: block !important;
+
+    width: 1px !important;
+    height: 24px !important;
+
+    margin-left: var(--ogs-doc-space-sm) !important;
+    margin-right: var(--ogs-doc-space-sm) !important;
+
+    background-color: var(--ogs-nav-separator-color) !important;
+    opacity: 1 !important;
+  }
+
+  .VPNavBarAppearance::after,
+  .VPNavBarAppearance.appearance::after {
+    content: "" !important;
+    display: block !important;
+
+    width: 1px !important;
+    height: 24px !important;
+
+    margin-left: var(--ogs-doc-space-sm) !important;
+    margin-right: var(--ogs-doc-space-sm) !important;
+
+    background-color: var(--ogs-nav-separator-color) !important;
+    opacity: 1 !important;
+  }
+
+  .VPNavBarSocialLinks,
+  .VPNavBarSocialLinks.social-links {
+    gap: var(--ogs-doc-space-sm) !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .VPNavBarSocialLinks::before,
+  .VPNavBarSocialLinks.social-links::before {
+    content: none !important;
+    display: none !important;
+  }
+
+  .VPNavBarSocialLinks .VPSocialLink {
+    width: auto !important;
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .VPNavBarSocialLinks .VPSocialLink span,
+  .VPNavBarSocialLinks .VPSocialLink svg {
+    width: 20px !important;
+    height: 20px !important;
+  }
+
+  .VPNavBarExtra {
+    margin-left: var(--ogs-doc-space-sm) !important;
+  }
+}
+
+@mixin type() {
+  .VPNavBar .title,
+  .VPNavBar .VPNavBarMenuLink,
+  .VPNavBar .VPNavBarMenuGroup .button,
+  .VPNavBar .VPNavBarMenuGroup .text,
+  .DocSearch-Button-Placeholder {
+    font-family: var(--ogs-font-body) !important;
+    font-size: var(--ogs-type-body-medium-size) !important;
+    line-height: var(--ogs-type-body-medium-line) !important;
+    letter-spacing: var(--ogs-type-body-medium-letter) !important;
+    font-weight: var(--ogs-type-body-medium-weight) !important;
+  }
+
+  .DocSearch-Button-Key {
+    font-family: var(--ogs-font-body) !important;
+    font-size: var(--ogs-type-body-small-size) !important;
+    line-height: 16px !important;
+    letter-spacing: var(--ogs-type-body-small-letter) !important;
+    font-weight: var(--ogs-type-body-small-weight) !important;
   }
 }
 
 @mixin all() {
   @include base();
   @include colors();
+  @include spacing();
+  @include type();
 }

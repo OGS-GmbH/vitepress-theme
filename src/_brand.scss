@@ -3,12 +3,43 @@
 
 @mixin vars() {
   :root {
-    --vp-c-brand-1: #{map.get(ogsid-11-theme.$petrol-palette, 80)} !important;
-    --vp-c-brand-2: #{map.get(ogsid-11-theme.$petrol-palette, 95)} !important;
+    --vp-c-bg: #{map.get(ogsid-11-theme.$gray-palette, 50)} !important;
+    --vp-c-bg-alt: #{map.get(ogsid-11-theme.$gray-palette, 50)};
+    --vp-c-bg-elv: #{map.get(ogsid-11-theme.$gray-palette, 50)};
+    --vp-c-bg-soft: #{map.get(ogsid-11-theme.$gray-palette, 50)};
+
+    --vp-c-border: #{map.get(ogsid-11-theme.$gray-palette, 300)} !important;
+    --vp-c-divider: #{map.get(ogsid-11-theme.$gray-palette, 300)} !important;
+
+    --vp-c-text-1: #{map.get(ogsid-11-theme.$gray-palette, 900)} !important;
+    --vp-c-text-2: #{map.get(ogsid-11-theme.$gray-palette, 900)} !important;
+
+    --vp-c-brand-1: #{map.get(ogsid-11-theme.$gray-palette, 200)} !important;
+    --vp-c-brand-2: #{map.get(ogsid-11-theme.$gray-palette, 100)} !important;
+  }
+
+  .dark {
+    /* Background */
+    //--vp-c-bg: #{map.get(ogsid-11-theme.$gray-palette, 900)} !important;
+    --vp-c-bg: #{map.get(ogsid-11-theme.$gray-palette, 900)} !important;
+    --vp-c-bg-alt: #{map.get(ogsid-11-theme.$gray-palette, 900)} !important;
+    --vp-c-bg-elv: #{map.get(ogsid-11-theme.$gray-palette, 900)} !important;
+    --vp-c-bg-soft: #{map.get(ogsid-11-theme.$gray-palette, 900)} !important;
+
+    /* Borders/Dividers */
+    --vp-c-border: #{map.get(ogsid-11-theme.$gray-palette, 800)} !important;
+    --vp-c-divider: #{map.get(ogsid-11-theme.$gray-palette, 800)} !important;
+
+    /* Text */
+    --vp-c-text-1: #{map.get(ogsid-11-theme.$gray-palette, 300)} !important;
+    --vp-c-text-2: #{map.get(ogsid-11-theme.$gray-palette, 300)} !important;
+
+    /* Brand */
+    --vp-c-brand-1: #{map.get(ogsid-11-theme.$deep-orange-palette, 400)} !important;
+    --vp-c-brand-2: #{map.get(ogsid-11-theme.$gray-palette, 100)} !important;
   }
 }
 
 @mixin all() {
   @include vars();
 }
-

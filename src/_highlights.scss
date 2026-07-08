@@ -1,0 +1,79 @@
+@use "sass:map";
+@use "@ogs-gmbh/ogsid-11-theme" as ogsid-11-theme;
+
+@mixin colors() {
+  .vp-doc .line.warning-highlight {
+    background-color: #{map.get(ogsid-11-theme.$yellow-palette, 300)} !important;
+    color: #{map.get(ogsid-11-theme.$gray-palette, 900)} !important;
+  }
+
+  .vp-doc .line.error-highlight {
+    background-color: #{map.get(ogsid-11-theme.$red-palette, 50)} !important;
+    color: #{map.get(ogsid-11-theme.$gray-palette, 900)} !important;
+  }
+
+  .vp-doc .line.success-highlight {
+    background-color: #{map.get(ogsid-11-theme.$teal-palette, 200)} !important;
+    color: #{map.get(ogsid-11-theme.$gray-palette, 900)} !important;
+  }
+
+  .vp-doc .line.petrol-1-highlight {
+    background-color: #{map.get(ogsid-11-theme.$cyan-palette, 50)} !important;
+    color: #{map.get(ogsid-11-theme.$gray-palette, 900)} !important;
+  }
+
+  .vp-doc .line.petrol-2-highlight {
+    background-color: #{map.get(ogsid-11-theme.$cyan-palette, 100)} !important;
+    color: #{map.get(ogsid-11-theme.$gray-palette, 900)} !important;
+  }
+
+  .vp-doc .line.petrol-3-highlight {
+    background-color: #{map.get(ogsid-11-theme.$gray-palette, 200)} !important;
+    color: #{map.get(ogsid-11-theme.$gray-palette, 900)} !important;
+  }
+
+  .vp-doc .line.gray-highlight {
+    background-color: #{map.get(ogsid-11-theme.$gray-palette, 400)} !important;
+    color: #{map.get(ogsid-11-theme.$gray-palette, 900)} !important;
+  }
+  .dark {
+    .vp-doc .line.warning-highlight {
+      background-color:  #{map.get(ogsid-11-theme.$orange-palette, 900)} !important;
+      color: #{map.get(ogsid-11-theme.$gray-palette, 300)} !important;
+    }
+
+    .vp-doc .line.error-highlight {
+      background-color:  #{map.get(ogsid-11-theme.$red-palette, 800)} !important;
+      color: #{map.get(ogsid-11-theme.$gray-palette, 300)} !important;
+    }
+
+    .vp-doc .line.success-highlight {
+      background-color: #{map.get(ogsid-11-theme.$teal-palette, 900)} !important;
+      color: #{map.get(ogsid-11-theme.$gray-palette, 300)} !important;
+    }
+
+    .vp-doc .line.petrol-1-highlight {
+      background-color: #{map.get(ogsid-11-theme.$blue-gray-palette, 900)} !important;
+      color: #{map.get(ogsid-11-theme.$gray-palette, 300)} !important;
+    }
+
+    .vp-doc .line.petrol-2-highlight {
+      background-color: #{map.get(ogsid-11-theme.$blue-gray-palette, 900)} !important;
+      color: #{map.get(ogsid-11-theme.$gray-palette, 300)} !important;
+    }
+
+    .vp-doc .line.petrol-3-highlight {
+      background-color: #{map.get(ogsid-11-theme.$blue-gray-palette, 900)} !important;
+      color: #{map.get(ogsid-11-theme.$gray-palette, 300)} !important;
+    }
+
+    .vp-doc .line.gray-highlight {
+      background-color: #{map.get(ogsid-11-theme.$gray-palette, 900)} !important;
+      color: #{map.get(ogsid-11-theme.$gray-palette, 300)} !important;
+    }
+  }
+}
+
+@mixin all() {
+  @include colors();
+}

@@ -1,0 +1,26 @@
+@use "sass:map";
+@use "@ogs-gmbh/ogsid-11-theme" as ogsid-11-theme;
+
+@mixin colors() {
+  .vp-doc a {
+    color: #{map.get(ogsid-11-theme.$orange-palette, 700)} !important;
+  }
+
+  .vp-doc a:hover {
+    color:  #{map.get(ogsid-11-theme.$deep-orange-palette, 900)} !important;
+  }
+
+  .dark {
+    .vp-doc a {
+      color: #{map.get(ogsid-11-theme.$deep-orange-palette, 400)} !important;
+    }
+
+    .vp-doc a:hover {
+      color:  #{map.get(ogsid-11-theme.$deep-orange-palette, 900)} !important;
+    }
+  }
+}
+
+@mixin all() {
+  @include colors();
+}
