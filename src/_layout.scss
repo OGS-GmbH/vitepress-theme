@@ -1,0 +1,93 @@
+@mixin vars() {
+  :root {
+    --ogs-doc-space-2xs: 4px;
+    --ogs-doc-space-xs: 8px;
+    --ogs-doc-space-sm: 12px;
+    --ogs-doc-space-md: 16px;
+    --ogs-doc-space-lg: 24px;
+    --ogs-doc-space-xl: 32px;
+
+    --ogs-doc-layout-gap: var(--ogs-doc-space-xl);
+    --ogs-doc-content-width: 768px;
+    --ogs-doc-radius-md: 8px;
+
+    --ogs-font-body: "Roboto", var(--vp-font-family-base);
+    --ogs-font-mono: "Roboto Mono", var(--vp-font-family-mono);
+
+    --ogs-type-headline-large-size: 32px;
+    --ogs-type-headline-large-line: 40px;
+    --ogs-type-headline-large-letter: 0;
+
+    --ogs-type-headline-small-size: 24px;
+    --ogs-type-headline-small-line: 32px;
+    --ogs-type-headline-small-letter: 0;
+
+    --ogs-type-title-medium-size: 16px;
+    --ogs-type-title-medium-line: 24px;
+    --ogs-type-title-medium-letter: 0.15px;
+    --ogs-type-title-medium-weight: 500;
+
+    --ogs-type-title-small-size: 14px;
+    --ogs-type-title-small-line: 20px;
+    --ogs-type-title-small-letter: 0.1px;
+    --ogs-type-title-small-weight: 500;
+
+    --ogs-type-body-medium-size: 14px;
+    --ogs-type-body-medium-line: 20px;
+    --ogs-type-body-medium-letter: 0.25px;
+    --ogs-type-body-medium-weight: 400;
+
+    --ogs-type-body-small-size: 12px;
+    --ogs-type-body-small-line: 16px;
+    --ogs-type-body-small-letter: 0.4px;
+    --ogs-type-body-small-weight: 400;
+
+    --ogs-type-code-size: 14px;
+    --ogs-type-code-line: 20px;
+  }
+}
+
+@mixin spacing() {
+  @media (min-width: 960px) {
+    .VPDoc {
+      padding-top: var(--ogs-doc-layout-gap) !important;
+      padding-left: var(--ogs-doc-layout-gap) !important;
+      padding-right: var(--ogs-doc-layout-gap) !important;
+    }
+
+    .VPDoc .container {
+      margin: 0 !important;
+    }
+
+    .VPDoc .main {
+      padding: 0 !important;
+    }
+
+    .VPDoc.has-aside > .container > .aside {
+      padding-left: var(--ogs-doc-layout-gap) !important;
+    }
+
+    .VPDoc.has-sidebar > .container > .content {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+
+    .VPDoc.has-aside > .container > .content {
+      padding-right: 0 !important;
+    }
+
+    .VPDoc.has-aside > .container > .content > .content-container {
+      max-width: none !important;
+    }
+  }
+  @media (min-width: 640px) {
+    .vp-code-block-title-bar {
+      margin: 0 0 0 0;
+    }
+  }
+}
+
+@mixin all() {
+  @include vars();
+  @include spacing();
+}

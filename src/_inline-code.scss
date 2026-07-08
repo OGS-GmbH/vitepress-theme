@@ -1,0 +1,29 @@
+@use "sass:map";
+@use "@ogs-gmbh/ogsid-11-theme" as ogsid-11-theme;
+
+@mixin colors() {
+  .vp-doc :not(pre) > code {
+    color: #{map.get(ogsid-11-theme.$cyan-palette, 900)};
+  }
+
+  .dark {
+    .vp-doc :not(pre) > code {
+      color: #{map.get(ogsid-11-theme.$cyan-palette, 800)};
+    }
+  }
+}
+
+@mixin type() {
+  .vp-doc :not(pre) > code {
+    font-family: var(--ogs-font-mono) !important;
+    font-size: var(--ogs-type-code-size) !important;
+    line-height: var(--ogs-type-code-line) !important;
+    letter-spacing: 0 !important;
+    font-weight: 400 !important;
+  }
+}
+
+@mixin all() {
+  @include colors();
+  @include type();
+}

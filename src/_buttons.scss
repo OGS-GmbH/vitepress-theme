@@ -3,8 +3,8 @@
 
 @mixin vars() {
   :root {
-    --vp-button-brand-bg: #{map.get(ogsid-11-theme.$petrol-palette, 50)} !important;
-    --vp-button-brand-hover-bg: #{map.get(ogsid-11-theme.$petrol-palette, 30)} !important;
+    --vp-button-brand-bg: #{map.get(ogsid-11-theme.$cyan-palette, 900)} !important;
+    --vp-button-brand-hover-bg: #{map.get(ogsid-11-theme.$blue-gray-palette, 900)} !important;
   }
 }
 

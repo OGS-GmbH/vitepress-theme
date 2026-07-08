@@ -4,6 +4,16 @@
 @use "./header" as header;
 @use "./logo" as logo;
 @use "./sidebar" as sidebar;
+@use "./toc" as toc;
+@use "./links" as links;
+@use "./inline-code" as inline-code;
+@use "./code-tabs" as code-tabs;
+@use "./code-blocks" as code-blocks;
+@use "./tables" as tables;
+@use "./info-boxes" as info-boxes;
+@use "./typography" as typography; 
+@use "./layout" as layout;
+@use "./highlights" as highlights;
 
 @mixin include() {
   @include brand.all();
@@ -12,4 +22,14 @@
   @include header.all();
   @include logo.all();
   @include sidebar.all();
+  @include toc.all();
+  @include links.all();
+  @include inline-code.all();
+  @include code-tabs.all();
+  @include code-blocks.all();
+  @include tables.all();
+  @include info-boxes.all();
+  @include typography.all();
+  @include layout.all();
+  @include highlights.all();
 }

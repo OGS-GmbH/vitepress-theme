@@ -1,0 +1,73 @@
+@use "sass:map";
+@use "@ogs-gmbh/ogsid-11-theme" as ogsid-11-theme;
+
+@mixin colors() {
+  .vp-doc table {
+    background-color: #{map.get(ogsid-11-theme.$gray-palette, 50)};
+    border-color: #{map.get(ogsid-11-theme.$gray-palette, 300)};
+  }
+
+  .vp-doc th {
+    background-color: #{map.get(ogsid-11-theme.$gray-palette, 100)};
+    color: #{map.get(ogsid-11-theme.$gray-palette, 900)};
+    border-color: #{map.get(ogsid-11-theme.$gray-palette, 300)};
+  }
+
+  .vp-doc td {
+    color: #{map.get(ogsid-11-theme.$gray-palette, 900)};
+    border-color: #{map.get(ogsid-11-theme.$gray-palette, 300)};
+  }
+
+  /* Dark */
+  .dark {
+    .vp-doc table {
+      background-color: #{map.get(ogsid-11-theme.$gray-palette, 900)};
+      border-color: #{map.get(ogsid-11-theme.$gray-palette, 700)};
+    }
+
+    .vp-doc th {
+      background-color: #{map.get(ogsid-11-theme.$gray-palette, 800)}; //262626
+      color: #{map.get(ogsid-11-theme.$gray-palette, 300)};
+      border-color: #{map.get(ogsid-11-theme.$gray-palette, 700)};
+    }
+
+    .vp-doc td {
+      color: #{map.get(ogsid-11-theme.$gray-palette, 300)};
+      border-color: #{map.get(ogsid-11-theme.$gray-palette, 700)};
+    }
+  }
+}
+
+@mixin spacing() {
+  .vp-doc table th {
+    padding: var(--ogs-doc-space-sm) var(--ogs-doc-space-md) !important;
+  }
+
+  .vp-doc table td {
+    padding: var(--ogs-doc-space-md) !important;
+  }
+}
+
+@mixin type() {
+  .vp-doc table th {
+    font-family: var(--ogs-font-body) !important;
+    font-size: var(--ogs-type-title-small-size) !important;
+    line-height: var(--ogs-type-title-small-line) !important;
+    letter-spacing: var(--ogs-type-title-small-letter) !important;
+    font-weight: var(--ogs-type-title-small-weight) !important;
+  }
+
+  .vp-doc table td {
+    font-family: var(--ogs-font-body) !important;
+    font-size: var(--ogs-type-body-medium-size) !important;
+    line-height: var(--ogs-type-body-medium-line) !important;
+    letter-spacing: var(--ogs-type-body-medium-letter) !important;
+    font-weight: var(--ogs-type-body-medium-weight) !important;
+  }
+}
+
+@mixin all() {
+  @include colors();
+  @include spacing();
+  @include type();
+}
